@@ -1,0 +1,18 @@
+﻿<Window x:Class="Projet.RemoveTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Remove Task Window" Height="113" Width="210">
+    <Grid Margin="10">
+        <!-- Contenu de la page de suppression de tâche -->
+        <StackPanel>
+            <!-- Bouton pour sélectionner le fichier à supprimer -->
+            <Button Content="Sélectionner le fichier à supprimer" Click="SelectFileToDelete_Click" Margin="0,0,0,5"/>
+
+            <!-- TextBox pour afficher le nom du fichier de la tâche sélectionnée -->
+            <TextBox x:Name="filePathTextBox" IsReadOnly="True" Margin="0,0,0,5" Height="20"/>
+
+            <!-- Bouton pour supprimer une tâche -->
+            <Button Content="Supprimer la tâche sélectionnée" Click="RemoveSelectedTask_Click" Margin="0,0,0,5"/>
+        </StackPanel>
+    </Grid>
+</Window>

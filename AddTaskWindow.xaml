@@ -1,0 +1,27 @@
+﻿<Window x:Class="Projet.AddTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Task" Height="450" Width="600">
+    <Grid Margin="20">
+        <!-- Contenu de la fenêtre d'ajout de tâche -->
+        <StackPanel>
+            <TextBlock Text="Titre de la tâche:" Foreground="Black" Margin="0,0,0,5"/>
+            <TextBox x:Name="taskTitleTextBox" Foreground="Black" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Description de la tâche:" Foreground="Black" Margin="0,0,0,5"/>
+            <TextBox x:Name="taskDescriptionTextBox" Foreground="Black" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Priorité de la tâche:" Foreground="Black" Margin="0,0,0,5"/>
+            <TextBox x:Name="taskPriorityTextBox" Foreground="Black" Margin="0,0,0,10"/>
+
+            <!-- Bouton pour ajouter une tâche -->
+            <Button Content="Ajouter une tâche" Click="AddTask_Click"/>
+
+            <!-- ListBox pour afficher toutes les tâches -->
+            <ListBox x:Name="taskListBox" ItemsSource="{Binding Tasks}" DisplayMemberPath="Title" Margin="0,10,0,0"/>
+
+            <Button Content="Ouvrir le dossier des tâches" Click="OpenTaskFolder_Click"/>
+            
+        </StackPanel>
+    </Grid>
+</Window>

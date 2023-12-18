@@ -1,0 +1,12 @@
+﻿<Window x:Class="Projet.ShowByPriority"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Show By Priority" Height="300" Width="400">
+    <Grid Margin="20">
+        <!-- ListBox pour afficher les fichiers par priorité -->
+        <ListBox x:Name="taskListBox" SelectionChanged="taskListBox_SelectionChanged" />
+
+        <!-- Bouton pour fermer la fenêtre -->
+        <Button Content="Fermer" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="CloseButton_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Projet.ShowByTag"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Show By Tag Window" Height="400" Width="600">
+    <Grid Margin="20">
+        <!-- Contenu de la fenêtre pour afficher les tâches par tag -->
+        <StackPanel>
+            <!-- TextBox pour entrer le tag -->
+            <TextBox x:Name="tagTextBox" Margin="0,0,0,10"/>
+
+            <!-- Bouton pour valider le tag -->
+            <Button Content="Valider" Click="ValidateButton_Click" Margin="0,0,0,10"/>
+
+            <!-- ListBox pour afficher les fichiers avec le tag -->
+            <ListBox x:Name="taskListBox" SelectionChanged="taskListBox_SelectionChanged" Height="250" Margin="0,0,0,10"/>
+
+            <!-- Bouton pour fermer la fenêtre -->
+            <Button Content="Fermer" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="CloseButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

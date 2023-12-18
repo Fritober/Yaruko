@@ -1,0 +1,49 @@
+﻿<Window x:Class="Projet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Task Manager" Height="450" Width="714">
+    <Grid>
+        <!-- Menu principal -->
+        <Menu>
+            <MenuItem Header="Options">
+                <!-- Options du menu -->
+                <MenuItem Header="Ajouter une tâche" Click="AddTask_Click"/>
+                <MenuItem Header="Supprimer une tâche" Click="RemoveTask_Click"/>
+                <MenuItem Header="Ajouter un tag à une tâche" Click="AddTagToTask_Click"/>
+                <MenuItem Header="Ajouter une deadline à une tâche" Click="AddDeadlineToTask_Click"/>
+                <MenuItem Header="Modifier une tâche" Click="ModifyTask_Click"/>
+                <MenuItem Header="Afficher toutes les tâches" Click="ShowAllTasks_Click"/>
+                <MenuItem Header="Afficher les tâches par priorité" Click="ShowTasksByPriority_Click"/>
+                <MenuItem Header="Afficher les tâches par tag" Click="ShowTasksByTag_Click"/>
+                <MenuItem Header="Afficher les tâches par deadline" Click="ShowTasksByDeadlineStatus_Click"/>
+                
+              
+                <MenuItem Header="Quitter" Click="Quit_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Conteneur pour les pages -->
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        
+        <!-- Boutons pour les différentes fonctionnalités -->
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="10,26,10,0" Height="305">
+            
+            <Button Content="Ajouter une tâche" Click="AddTask_Click" Margin="5"/>
+            <Button Content="Supprimer une tâche" Click="RemoveTask_Click" Margin="5"/>
+            <Button Content="Ajouter un tag à une tâche" Click="AddTagToTask_Click" Margin="5"/>
+            <Button Content="Ajouter une deadline à une tâche" Click="AddDeadlineToTask_Click" Margin="5"/>
+            <Button Content="Modifier une tâche" Click="ModifyTask_Click" Margin="5"/>
+            <Button Content="Afficher toutes les tâches" Click="ShowAllTasks_Click" Margin="5"/>
+            <Button Content="Afficher les tâches par priorité" Click="ShowTasksByPriority_Click" Margin="5"/>
+            <Button Content="Afficher les tâches par tag" Click="ShowTasksByTag_Click" Margin="5"/>
+            <Button Content="Afficher les tâches par deadline" Click="ShowTasksByDeadlineStatus_Click" Margin="5"/>
+            
+            
+            <Button Content="Quitter" Click="Quit_Click" Margin="5"/>
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>
+    
+    

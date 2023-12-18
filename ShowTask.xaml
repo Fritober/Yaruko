@@ -1,0 +1,14 @@
+﻿<Window x:Class="Projet.ShowTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Show Task Window" Height="300" Width="400">
+    <Grid Margin="20">
+        <ListBox x:Name="taskListBox" SelectionChanged="taskListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="Projet.AddTagWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Tag Window" Height="200" Width="500">
+    <Grid Margin="20">
+        <!-- Contenu de la fenêtre pour ajouter un tag -->
+        <StackPanel>
+
+            <!-- Bouton pour sélectionner le fichier à modifier -->
+            <Button Content="Sélectionner le fichier à modifier" Click="SelectFile_Click" Margin="0,0,0,10"/>
+
+            <!-- TextBox pour afficher le chemin du fichier sélectionné -->
+            <TextBox x:Name="filePathTextBox" IsReadOnly="True" Margin="0,0,0,10"/>
+
+            <!-- TextBox pour entrer le tag -->
+            <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,10">
+                <TextBox x:Name="tagTextBox" />
+            </Border>
+
+            <!-- Bouton pour ajouter le tag au fichier -->
+            <Button Content="Ajouter le tag" Click="AddTag_Click" Margin="0,0,0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>
